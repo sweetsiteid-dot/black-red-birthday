@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Ibra ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<audio id="music" loop>
+<source src="somh.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PIN SCREEN -->
+
+<div id="pinScreen">
+
+<div class="pin-box">
+
+<h1>🎂</h1>
+
+<h2>Private Birthday Gift</h2>
+
+<p>Enter PIN</p>
+
+<input
+type="password"
+id="pinInput"
+readonly
+placeholder="••••">
+
+<div class="keypad">
+
+<button onclick="addPin('1')">1</button>
+<button onclick="addPin('2')">2</button>
+<button onclick="addPin('3')">3</button>
+
+<button onclick="addPin('4')">4</button>
+<button onclick="addPin('5')">5</button>
+<button onclick="addPin('6')">6</button>
+
+<button onclick="addPin('7')">7</button>
+<button onclick="addPin('8')">8</button>
+<button onclick="addPin('9')">9</button>
+
+<button onclick="clearPin()">⌫</button>
+<button onclick="addPin('0')">0</button>
+<button onclick="checkPin()">❤️</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- WEBSITE -->
+
+<div id="website" class="hidden">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Happy Birthday 🎂</h1>
+
+<h2>Ibra ❤️</h2>
+
+<p>
+
+Today is all about you.
+
+A day worth celebrating,
+a day worth remembering,
+and a day made special
+because it's yours.
+
+So I made this little place
+filled with memories,
+appreciation,
+and birthday wishes
+just for you.
+
+❤️
+
+</p>
+
+<button onclick="openHeart()">
+Open My Heart ❤️
+</button>
+
+</section>
+
+<!-- LETTER -->
+
+<section id="bottleSection" class="hidden">
+
+<h2>A Letter For Ibra 🖤</h2>
+
+<p class="tap-text">
+Tap the bottle
+</p>
+
+<div id="bottleArea">
+
+<div id="bottle" onclick="breakBottle()">
+🍾
+</div>
+
+<div id="flowers"></div>
+
+</div>
+
+<div id="letterContainer">
+
+<div class="letter-paper">
+
+<div id="letterText"></div>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- GALLERY -->
+
+<section class="gallery">
+
+<h2>Favorite Memories 📸</h2>
+
+<div class="gallery-grid">
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+
+<img src="foto5.jpg">
+<img src="foto6.jpg">
+
+<img src="foto7.jpg">
+<img src="foto8.jpg">
+
+<img src="foto9.jpg">
+<img src="foto10.jpg">
+
+</div>
+
+</section>
+
+<!-- QUIZ -->
+
+<section class="quiz-section">
+
+<h2>❤️ Birthday Quiz ❤️</h2>
+
+<p>
+
+Answer all questions correctly
+to unlock the final surprise.
+
+</p>
+
+<div id="quizBox">
+
+<div class="question active">
+
+<h3>What color represents this website?</h3>
+
+<button onclick="checkAnswer(this,true)">Black 🖤</button>
+<button onclick="checkAnswer(this,false)">Blue</button>
+<button onclick="checkAnswer(this,false)">Pink</button>
+
+</div>
+
+<div class="question">
+
+<h3>How many birthdays do we celebrate today?</h3>
+
+<button onclick="checkAnswer(this,false)">2</button>
+<button onclick="checkAnswer(this,true)">1 🎂</button>
+<button onclick="checkAnswer(this,false)">10</button>
+
+</div>
+
+<div class="question">
+
+<h3>Who is today's special person?</h3>
+
+<button onclick="checkAnswer(this,false)">Peter</button>
+<button onclick="checkAnswer(this,true)">Ibra ❤️</button>
+<button onclick="checkAnswer(this,false)">Alex</button>
+
+</div>
+
+</div>
+
+<div id="quizSuccess" class="hidden">
+
+<h2>🎉 Special Surprise 🎉</h2>
+
+<img src="special.jpg" class="special-photo">
+
+<p>
+
+The star of today.
+
+The reason this website exists.
+
+Happy Birthday, Ibra.
+
+❤️
+
+</p>
+
+</div>
+
+</section>
+
+  <!-- FINAL MESSAGE -->
+
+<section class="final">
+
+<h2>Happy Birthday ❤️</h2>
+
+<h3>Ibra</h3>
+
+<p>
+
+May this year bring you
+more happiness,
+more success,
+and more unforgettable moments.
+
+May every goal you chase
+find its way into reality.
+
+May every challenge
+make you stronger.
+
+And may every step forward
+bring you closer
+to the life you dream of.
+
+Thank you for all the memories.
+
+Thank you for all the laughter.
+
+Thank you for being
+such an amazing person.
+
+No matter where life takes you,
+
+never stop believing
+in yourself.
+
+Happy Birthday once again.
+
+Wishing you nothing
+but the very best.
+
+❤️
+
+- Peter
+
+</p>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
